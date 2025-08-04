@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Function that sums a list of floats."""
+"""
+Type-annotated variables with specified values.
+"""
 
-from typing import List
-
-def sum_list(input_list: List[float]) -> float:
-    """Return the sum of a list of floats."""
-    return sum(input_list)
-
+a: int = 1
+pi: float = 3.14
+i_understand_annotations: bool = True
+school: str = "Holberton"

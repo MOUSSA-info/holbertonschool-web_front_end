@@ -1,7 +1,17 @@
-#!/usr/bin/env python3
-"""Function that adds two floats."""
+#!/usr/bin/python3
+import asyncio
+import random
 
-def add(a: float, b: float) -> float:
-    """Return the sum of two floats."""
-    return a + b
 
+async def wait_random(max_delay: int = 10) -> float:
+    """Attend un délai aléatoire entre 0 et max_delay secondes et le retourne.
+    
+    Args:
+        max_delay: Le délai maximum en secondes (défaut: 10)
+        
+    Returns:
+        Le délai aléatoire qui a été attendu (float)
+    """
+    delay = random.uniform(0, max_delay)
+    await asyncio.sleep(delay)
+    return delay

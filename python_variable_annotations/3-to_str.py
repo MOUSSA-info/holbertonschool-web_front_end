@@ -1,7 +1,17 @@
 #!/usr/bin/env python3
-"""Function that returns the string representation of a float."""
+"""
+Type-annotated function that converts a float to string.
+"""
+
 
 def to_str(n: float) -> str:
-    """Return the string representation of a float."""
-    return str(n)
+    """
+    Convert a float to its string representation.
 
+    Args:
+        n (float): The float number to convert to string
+
+    Returns:
+        str: String representation of the float
+    """
+    return str(n)
